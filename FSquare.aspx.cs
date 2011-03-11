@@ -23,9 +23,9 @@ namespace FSquareCSharp
         protected void Page_Load(object sender, EventArgs e)
         {
             oAuth = new oAuth4Square();
-            oAuth.ConsumerKey = "BOQ05D3OZZR01KCUKX10VS2LQ1Y0XFTYF20LQLQW4LBZQ2EG";
-            oAuth.ConsumerSecret = "WZM1N5QMKNZQB3XOJ3RF4XXUJBFMCLNFMVHS0ZGAH1EVSNTH";
-            oAuth.CallBackUrl = "http://ravmemcacheme.com:15120/FSquare.aspx";
+            oAuth.ConsumerKey = ""; //insert your client id/key
+            oAuth.ConsumerSecret = ""; //insert your client secret
+            oAuth.CallBackUrl = ""; //insert your callback url
             if (Request.QueryString["code"] == null)
             {
                 fsquareauthenticateurl = oAuth.oAuthRequestToken + "?" + "client_id=" + oAuth.ConsumerKey + "&response_type=code&redirect_uri=" + oAuth.CallBackUrl;
