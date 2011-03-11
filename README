@@ -1,7 +1,7 @@
 A C# implementation of foursquare oauth to connect to the API
 
 To use this code, you will need a client id/key which you can set up by going to developer.foursquare.com and registering 
-your application. You also need to include the pre-build dll - foursquarenewapi.dll which is included in this project.
+your application. You also need add a reference to include the pre-build dll - foursquarenewapi.dll which is included in this project.
 
 The code is self-explanatory but in case you are stuck or need help, pls email me at: praveen.aravamudham@gmail.com
 
